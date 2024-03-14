@@ -3,6 +3,14 @@
 	border-top: 0.01rem solid #717171;
 	padding-top: 3rem;
 
+
+	@media (min-height: 700px){
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 0;
+	}
+
 	&__main-container{
 
 		&__education{
@@ -54,6 +62,17 @@
 	}
 }
 
-@media (min-width: 700px){
-	
+@media (min-height: 800px) and (orientation: landscape){
+	.socials__main-container__about-me-text{
+		font-size: 1.6rem;
+		line-height: 2.3rem;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.socials{
+		height: 100vh;
+		padding-top: 2rem;
+		padding-bottom: 0.5rem;
+	}
 }
