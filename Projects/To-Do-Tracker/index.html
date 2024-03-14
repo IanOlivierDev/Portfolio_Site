@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-Tracker</title>
+    <link rel="icon" type="image/x-icon" href="\Icons\RemovedBG\White.png" media="(prefers-color-scheme: dark)">
+	  <link rel="icon" type="image/x-icon" href="\Icons\RemovedBG\Black.png" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="/Projects/To-Do-Tracker/Styles/styles.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__container-item">
+          <a href="/Projects/To-Do-Tracker/index.html" class="nav__container-item-link">List</a>
+        </div>
+        <div class="nav__container-item nav__container-item-link-logo-centering">
+          <a href="/" class="nav__container-item-link">
+            <img src="/Projects/To-Do-Tracker/Logo/White.png" alt="IO_Logo" class="nav__container-item-link-logo">
+          </a>
+        </div>
+        <div class="nav__container-item">
+          <a href="/Projects/To-Do-Tracker/notes.html" target="_top" class="nav__container-item-link">Notes</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+      <section class="contentBlockBottom">
+        <div class="contentBlockBottom__header-container">
+          <p class="contentBlockBottom__header-container-item">Your Tasks</p>
+          <p class="contentBlockBottom__header-container-item">
+            <button class="contentBlockBottom__header-list-add-button">Add Task</button>
+          </p>
+        </div>
+        <p class="contentBlockBottom__header-text">To-Do-List</p>
+        <div class="contentBlockBottom__list">
+          <div class="contentBlockBottom__list-add-container">
+            <input type="text" class="contentBlockBottom__list__text-input">
+            <a class="contentBlockBottom__list__text-input-close-button-link"><img src="Icons/deleteWhite.png" alt="" class="contentBlockBottom__list__text-input-close-button"></a>
+            <button class="contentBlockBottom__list-add-button">Add Item</button>
+          </div>
+          <ul class="contentBlockBottom__list-container"></ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/Projects/To-Do-Tracker/Scripts/main.js"></script>
+    <script type="module" src="/Projects/To-Do-Tracker/Scripts/notes.js"></script>
+  </body>
+</html>
