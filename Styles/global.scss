@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    font-family: "Kode Mono", monospace;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

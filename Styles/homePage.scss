@@ -1,0 +1,153 @@
+.mainContent{
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    
+	&__container-hero{
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+        height: 94.6vh;
+        padding-bottom: 2rem;
+        margin-top: 3.2rem;
+	}
+
+	&__header-text{
+		color: white;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 5em;
+		padding-bottom: 0;
+		width: 35%;
+	}
+	
+	&__subtitle-text{
+		font-size: 0.6em;
+        margin-top: 0.6rem;
+        margin-bottom: 0;
+	}
+
+    &__subtitle-text-dev{
+        margin-bottom: 0;  
+    }
+
+    &__subtitle-text-dev span{
+        color: #8b5eb4;
+        font-size: 2.4rem;
+        letter-spacing: 0.8rem;
+        animation: flicker 1s infinite alternate;
+    }
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 57%, 60% {
+  
+        text-shadow:
+        0 0 4px #8b5eb4,
+        0 0 11px #8b5eb4,
+        0 0 19px #8b5eb4,
+        0 0 40px #8b5eb4,
+        0 0 80px #8b5eb4,
+        0 0 90px #8b5eb4,
+    }
+    
+    20%, 24%, 50% {        
+        text-shadow: none;
+    }    
+}
+
+#THREEJSCanvas{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+@keyframes logoSymbol{
+    from {width: 23px}
+    to   {width: 18px;}
+}
+
+@keyframes logoName{
+    from {width: 250px}
+    to   {width: 200px;}
+}
+
+
+@media (max-width: 950px){
+    .nav__logoImg{
+        width: 18px;
+        animation: logoSymbol 0.3s linear;
+    }
+    .nav__logoText{
+        width: 200px;
+        padding-left: 20px;
+        margin-top: 2.9px;
+        animation: logoName 0.3s linear;
+    }
+    .mainContent__container-hero{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #THREEJSCanvas{
+        margin-bottom: 0.2rem;
+    }
+
+    .mainContent__header-text{
+        font-size: 3rem;
+        text-align: center;
+        width: 80%;
+    }
+    .mainContent__subtitle-text{
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px){
+    .mainContent__container-hero{
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+	.mainContent__header-text{
+        margin-top: 1rem;
+    }
+    .mainContent__subtitle-text{
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 0.4rem;
+    }
+    .mainContent__subtitle-text-dev{
+        font-size: 1.6rem;
+    }
+    #THREEJSCanvas{
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px){
+    .mainContent__container-hero{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    #THREEJSCanvas{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .mainContent__subtitle-text{
+        font-size: 1rem;
+    }
+    .mainContent__subtitle-text-dev{
+        font-size: 1.5rem;
+    }
+}

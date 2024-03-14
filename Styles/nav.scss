@@ -1,0 +1,157 @@
+.nav{
+	width: 100%;
+	background-color: black;
+	box-shadow: 0px -20px 10px 20px rgba(255,255,255,1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7rem 0;
+	z-index: 1;
+	position: absolute;
+
+	&__roundedContainer{
+		height: 70%;
+		width: 100%;
+		border: 2px solid white;
+		margin: 0 10px;
+		padding: 0.3rem 0;
+		border-radius: 15px;
+	  
+		background-image: url('/Images/starry-night-sky.jpg');
+		background-size: cover;
+		background-size: 105%;
+	  
+	  
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logoContainer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  
+		margin-left: 25px;
+	}
+
+	&__logoImg{
+		width: 23px;
+	}
+
+	&__logoText{
+		width: 250px;
+		padding-left: 20px;
+		margin-top: 2.9px;
+	}
+
+	&__menuContainer{
+		margin-right: 25px;
+		animation: menuIn 0.2s ease-in;
+	}
+
+	&__menuContainer-item{
+		text-decoration: none;
+		color: white;
+		font-size: 2.4em;
+		letter-spacing: 5px;
+		margin-right: 30px;
+		font-weight: 600;
+		
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+
+	&__menuButton{
+		display: none;
+		cursor: pointer;
+	}
+
+	&__menuButton-icon{
+		width: 1.7rem;
+		height: 1.7rem;
+		margin-right: 25px;
+	}
+
+	&__menu-slider{
+		position: absolute;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 10rem;
+		width: 0;
+		background-color: rgb(0, 0, 0);
+		z-index: 2000;
+		border-radius: 5px;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		transition: 0.2s ease-in;
+	}
+
+	&__menu__slider-item{
+		display: inline-block;
+		text-decoration: none;
+		text-align: center;
+		font-size: 1.5rem;
+   		color: white;
+
+    &:hover{
+      font-weight: 600;
+    }
+	}
+
+	&__menu-button-close{
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+
+	&__menu-button-close-icon{
+		pointer-events: none;
+		width: 3.4rem;
+		height: 3.4rem;
+	}
+
+	&__menu-slider--active{
+		width: 100%;
+	}
+}
+
+
+
+
+@keyframes menuIn {
+	from {display: none; opacity: 0;}
+	to {display: block; opacity: 1;}
+}
+  
+@keyframes menuOut {
+	from {display: block; opacity: 1;}
+	to {display: none; opacity: 0;}
+}
+  
+  
+@media (max-width: 950px){
+	.nav__menuContainer{
+		display: none;
+	}
+  
+	.nav__menuButton{
+		display: block;
+		animation: menuIn 0.2s ease-in;
+		display: flex;
+		align-items: center;
+	}
+}
+  
+@media (min-width: 950px){
+	.nav__menu-slider{
+		display: none;
+	}
+}
+  
