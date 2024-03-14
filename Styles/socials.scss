@@ -3,7 +3,20 @@
 	border-top: 0.01rem solid #717171;
 	padding-top: 3rem;
 
+
+	@media (min-height: 700px){
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 0;
+	}
+
 	&__main-container{
+
+		&__about-me{
+			padding-top: 3rem;
+			padding-bottom: 1rem;
+		}
 
 		&__education{
 			padding-top: 1rem;
@@ -54,6 +67,67 @@
 	}
 }
 
-@media (min-width: 700px){
-	
+@media (min-width: 1400px){
+	.socials__main-container__about-me-header, .socials__main-container__education-header{
+		font-size: 3rem;
+	}
+
+	.socials__main-container__about-me-text{
+		width: 70%;
+	}
+
+	.socials__links-container{
+		height: 10rem;
+	}
+
+	.socials__main-container__education-text{
+		font-size: 1.8rem;
+	}
+
+	.socials__main-container__education-text-dates{
+		font-size: 2.2rem;
+	}
+
+}
+
+@media (min-height: 800px) and (orientation: landscape){
+	.socials__main-container__about-me-text{
+		font-size: 1.6rem;
+		line-height: 2.3rem;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.socials{
+		height: 100vh;
+		padding-top: 2rem;
+		padding-bottom: 0.5rem;
+	}
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+	.socials{
+		height: 100vh;
+	}
+	.socials__main-container__about-me-header{
+		padding-top: 2rem;
+	}
+	.socials__main-container__about-me-header{
+		font-size: 3rem;
+		padding-bottom: 1.5rem;
+	}
+	.socials__main-container__about-me-text{
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+		padding-bottom: 2rem;
+	}
+	.socials__main-container__education-header{
+		font-size: 3rem;
+	}
+	.socials__main-container__education-text-dates{
+		font-size: 1.5rem;
+	}
+	.socials__links-container{
+		margin-top: 3rem;
+	}
 }

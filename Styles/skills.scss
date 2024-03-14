@@ -116,7 +116,7 @@
 	&__projects{
 		@media (min-height: 700px){
 			height: 40%;
-			margin-top: 2rem;
+			margin-top: 1rem;
 		}
 	}
 
@@ -166,8 +166,11 @@
 
 
 @media (min-height: 900px){
+	.skillsContent{
+		height: 100vh;
+	}
+
 	.skillsContent__header-text{
 		font-size: 3rem;
 	}
-
 }
