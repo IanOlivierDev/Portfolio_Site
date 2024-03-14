@@ -1,4 +1,4 @@
-import * as THREE from "./node_modules/three/build/three.module.js";
+import * as THREE from 'three';
 import one from '/Logo/Logo_seperated/one-cropped.png';
 import planeTexture from '/Images/black_Stars.jpg';
 
