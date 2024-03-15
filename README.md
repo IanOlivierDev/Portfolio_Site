@@ -1,6 +1,6 @@
 <h1 align="center">Hi 🤖, I'm Ian Olivier</h1>
 <br><br/>
-<h3 align="center">Welcome to my portfolio site!</h3>
+<h2 align="center">Welcome to my portfolio site!</h2>
 
 <br><br/>
 <h3 align="center">Usage 🛠️</h3>
