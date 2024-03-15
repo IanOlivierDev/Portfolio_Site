@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import one from '/Logo/Logo_seperated/one-cropped.png';
-import planeTexture from '/Images/black_Stars.jpg';
+import one from '/Public/Logo/Logo_seperated/one-cropped.png';
+import planeTexture from '/Public/Images/black_Stars.jpg';
 
 //Scene and Camera
 const scene = new THREE.Scene();
